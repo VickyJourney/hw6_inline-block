@@ -1,3 +1,4 @@
+
 .container {
     max-width: 1200px;
     width: 100%;
@@ -6,6 +7,17 @@
     padding: 0 15px;
     vertical-align: top;
     font-family: 'popins', sans-serif;
+    font-size: 0px;
+}
+
+.main-container {
+    max-width: 1200px;
+    width: 100%;
+    height: 450px;
+    margin: 0 auto;
+    padding: 0 15px;
+    font-family: 'popins', sans-serif;
+    vertical-align: top;
     font-size: 0px;
 }
 
@@ -24,8 +36,6 @@
 .header-nav {
     text-align:center;
     vertical-align: top;
-    /* width: 351px;
-    height: 45px; */
     width: calc(100% - 250px);
 }
 
@@ -60,7 +70,7 @@
     border-bottom: 3px solid #46A358;
 }
 
-.header-button {
+.header-button, .main-button {
     width: 100px;
     height: 35px;
     color: white;
@@ -69,6 +79,7 @@
     border: none;
     align-items: center;
     vertical-align: middle;
+    font-size: 14px;
 }
 
 .header-button img {
@@ -78,5 +89,72 @@
 .header-button span {
     width: 42px;
     height: 20px;
-    /* padding-left: 0px; */
+}
+
+.main-text {
+    border: #46A358;
+    border-width: 1px;
+    font-size: 16px;
+    vertical-align: middle;
+    height: 450px;
+    margin-right: 60px;
+    margin-left: 40px;
+}
+
+.main-text, .plant-container {
+    display: inline-block;
+    width: 45%;
+    vertical-align: middle;
+    height: 450px;
+}
+
+#p1 { 
+    text-transform: uppercase;
+    font-weight: 500; 
+    color: #3D3D3D; 
+    margin-top: 68px;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #3D3D3D;
+    font-size: 60px;
+}
+
+#p2 {
+    font-weight: 400;
+    color:#727272;
+}
+
+.main-text h1 span {
+    color: #46A358;
+}
+
+.h1 {
+    display: inline-block;
+    width: 530px;
+    height: 140px;
+}
+
+.plant-container {
+    display: inline-block;
+    position: relative;
+    text-align: right;
+}
+
+.big-plant {
+    display: block;
+    width: 507px;
+    height: 450px;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+
+.small-plant {
+    position: absolute;;
+    width: 135px;
+    height: 135px;
+    bottom: 0;
+    left: 0;
 }
