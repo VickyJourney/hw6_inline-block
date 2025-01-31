@@ -1,5 +1,5 @@
 * {
-    font-family: 'popins', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 h1 {
@@ -11,6 +11,12 @@ h1 {
     height: 140px;
     margin-top: 7px;
     margin-bottom: 0px;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
 }
 
 #p1 {
@@ -80,7 +86,7 @@ h1 {
 .header-nav {
     text-align:center;
     vertical-align: top;
-    width: calc(100% - 250px);
+    width: calc(100% - 252px);
     padding: 0;
     font-size: 0px;
 }
@@ -106,14 +112,14 @@ h1 {
     font-size: 16px;
 }
 
-.active a {
-    font-weight: 700;
-}
-
 .active a, .header-nav li a:hover {
     border-bottom: 3px solid #46A358;
     font-weight: 700;
     transform: scale(1.1);
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    
 }
 
 .button {
@@ -122,12 +128,17 @@ h1 {
     border-radius: 6px;
     border: none;
     cursor: pointer;
+    align-items: center;
+    gap: 4px;
+    display: inline-flex;
+    justify-content: center;
 }
 
 .button:hover {
     background-color: #3D8B57;
     transform: scale(1.05);
     transition: all 0.3s ease-in-out;
+    transform-origin: center;
 }
 
 .button--small {
@@ -140,14 +151,12 @@ h1 {
     font-size: 16px;
 }
 
-.uppercase {
-    text-transform: uppercase;
+.button span {
+    font-weight: 500;
 }
 
-.center-elements {
-    display: flex;
-    align-items: center;
-    gap: 4px;
+.uppercase {
+    text-transform: uppercase;
 }
 
 .main-text {
@@ -167,12 +176,6 @@ h1 {
 
 .main-text h1 span {
     color: #46A358;
-}
-
-.h1 {
-    display: inline-block;
-    width: 530px;
-    height: 140px;
 }
 
 .plant-container {
