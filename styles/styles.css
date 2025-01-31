@@ -1,5 +1,5 @@
-* {
-    font-family: 'Poppins', sans-serif;
+body {
+    font: 14px/24px 'Poppins', sans-serif;
 }
 
 h1 {
@@ -7,10 +7,8 @@ h1 {
     color: #3D3D3D;
     font-size: 60px;
     line-height: 70px;
-    width: 530px;
-    height: 140px;
-    margin-top: 7px;
-    margin-bottom: 0px;
+    padding-top: 7px;
+    margin: 0;
 }
 
 a {
@@ -21,28 +19,16 @@ a {
 
 #p1 {
     font-weight: 500;
-    font-size: 14px;
     color: #3D3D3D;
-    margin-top: 68px;
-    width: 205px;
-    height: 16px;
     line-height: 16px;
-    padding-left: 3px;
+    padding: 68px 0 0 3px;
+    margin: 0;
 }
 
 #p2 {
-    font-weight: 400;
     color: #727272;
-    width: 557px;
-    height: 45px;
-    line-height: 24px;
-    font-size: 14px;
-    margin-top: 5px;
-    padding-left: 3px;
-}
-
-#call-to-action {
-    margin-top: 44px;
+    padding: 5px 0 0 3px;
+    margin: 0 0 44px 0;
 }
 
 .container {
@@ -60,7 +46,6 @@ a {
 
 .main-container {
     width: 100%;
-    height: 450px;
     margin: 0 auto;
     vertical-align: top;
     font-size: 0px;
@@ -72,15 +57,10 @@ a {
     background-color: #F5F5F580;
 }
 
-.header-logo, .header-nav, .header-button {
+.header-logo, .header-nav {
     display: inline-block;
     font-size: 16px;
-    vertical-align: top;
-}
-
-.header-logo {
-    width: 150px;
-    height: 35px;
+    /* vertical-align: center; */
 }
 
 .header-nav {
@@ -91,15 +71,10 @@ a {
     font-size: 0px;
 }
 
-.header-nav-list {
-    padding: 0;
-    text-align: center;
-}
-
 .header-nav li {
     list-style: none;
     display: inline-block;
-    margin: 8px 25px 0;
+    padding: 8px 25px 0;
     font-size: 16px;
 }
 
@@ -127,11 +102,9 @@ a {
     background-color: #46A358;
     border-radius: 6px;
     border: none;
-    cursor: pointer;
     align-items: center;
-    gap: 4px;
     display: inline-flex;
-    justify-content: center;
+    gap: 4px;
 }
 
 .button:hover {
@@ -143,7 +116,6 @@ a {
 
 .button--small {
     padding: 8px 16px;
-    font-size: 14px;
 }
 
 .button--large {
@@ -153,6 +125,13 @@ a {
 
 .button span {
     font-weight: 500;
+    display: inline-block;
+    vertical-align: center;
+}
+
+.logo {
+    display: inline-block;
+    vertical-align: center;
 }
 
 .uppercase {
@@ -164,14 +143,13 @@ a {
     border-width: 1px;
     font-size: 16px;
     vertical-align: middle;
-    height: 450px;
+    /* padding-right: 93px; */
 }
 
 .main-text, .plant-container {
     display: inline-block;
     width: 45%;
     vertical-align: middle;
-    height: 450px;
 }
 
 .main-text h1 span {
@@ -182,21 +160,7 @@ a {
     display: inline-block;
     position: relative;
     text-align: right;
-}
-
-.big-plant {
-    display: block;
-    width: 507px;
-    height: 450px;
-    padding-right: 0;
-    padding-bottom: 0;
     margin-left: 93px;
 }
 
-.small-plant {
-    position: absolute;
-    width: 135px;
-    height: 135px;
-    bottom: 17px;
-    left: 148px;
-}
+
