@@ -1,11 +1,26 @@
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('./fonts/CeraPro-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('./fonts/CeraPro-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    }
+
 body {
-    font: 14px/24px 'Poppins', sans-serif;
+    font-family: 'Cera Pro', sans-serif;
 }
 
 h1 {
     font-weight: 900;
     color: #3D3D3D;
-    font-size: 60px;
+    font-size: 70px;    
     line-height: 70px;
     padding-top: 7px;
     margin: 0;
@@ -53,20 +68,20 @@ a {
 
 .hero-container {
     width: 100%;
-    padding: 40px;
+    padding-left: 40px;
     background-color: #F5F5F580;
+    margin-bottom: 52px;
 }
 
-.header-logo, .header-nav {
+.logo, .header-nav {
     display: inline-block;
     font-size: 16px;
-    /* vertical-align: center; */
 }
 
 .header-nav {
     text-align:center;
     vertical-align: top;
-    width: calc(100% - 252px);
+    width: calc(100% - 258px);
     padding: 0;
     font-size: 0px;
 }
@@ -102,15 +117,24 @@ a {
     background-color: #46A358;
     border-radius: 6px;
     border: none;
-    align-items: center;
-    display: inline-flex;
-    gap: 4px;
+    vertical-align: top;
+    transition: all 0.3s ease-in-out;
+}
+
+.button span {
+    font-weight: 500;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.icon {
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .button:hover {
     background-color: #3D8B57;
     transform: scale(1.05);
-    transition: all 0.3s ease-in-out;
     transform-origin: center;
 }
 
@@ -121,35 +145,21 @@ a {
 .button--large {
     padding: 10px 26px;
     font-size: 16px;
+    margin-bottom: 85px;
 }
 
-.button span {
-    font-weight: 500;
-    display: inline-block;
-    vertical-align: center;
-}
-
-.logo {
-    display: inline-block;
-    vertical-align: center;
-}
 
 .uppercase {
     text-transform: uppercase;
 }
 
 .main-text {
-    border: #46A358;
-    border-width: 1px;
     font-size: 16px;
     vertical-align: middle;
-    /* padding-right: 93px; */
-}
-
-.main-text, .plant-container {
     display: inline-block;
-    width: 45%;
-    vertical-align: middle;
+    width: 55%;
+    margin-right: 93px;
+    text-align: left;
 }
 
 .main-text h1 span {
@@ -158,9 +168,16 @@ a {
 
 .plant-container {
     display: inline-block;
-    position: relative;
+    width: 35%;
+    vertical-align: middle;
     text-align: right;
-    margin-left: 93px;
 }
+
+.plants-banner {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
 
 
