@@ -1,17 +1,16 @@
-
 @font-face {
     font-family: 'Cera Pro';
     src: url('./fonts/CeraPro-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
-    }
+}
 
 @font-face {
     font-family: 'Cera Pro';
     src: url('./fonts/CeraPro-Bold.woff2') format('woff2');
     font-weight: 700;
     font-style: normal;
-    }
+}
 
 body {
     font-family: 'Cera Pro', sans-serif;
@@ -19,8 +18,8 @@ body {
 }
 
 h1 {
-    font-weight: 900;
-    font-size: 70px;    
+    font-weight: 700;
+    font-size: 70px;
     line-height: 70px;
     padding-top: 7px;
     margin: 0;
@@ -36,8 +35,8 @@ a {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    width: 100%;  
-    padding: 0 15px;  
+    width: 100%;
+    padding: 0 15px;
 }
 
 .header-container {
@@ -49,23 +48,24 @@ a {
 
 .main-container {
     font-size: 0px;
-    margin-bottom: 172px;
 }
 
 .hero-container {
     padding-left: 40px;
     background-color: #F5F5F580;
     padding-top: 68px;
-    padding-bottom: 52px;
+    padding-bottom: 10px;
+    margin-bottom: 36px;
 }
 
-.logo, .header-nav {
+.logo,
+.header-nav {
     display: inline-block;
     font-size: 16px;
 }
 
 .header-nav {
-    text-align:center;
+    text-align: center;
     vertical-align: top;
     width: calc(100% - 258px);
     font-size: 0px;
@@ -83,7 +83,8 @@ a {
     font-size: 16px;
 }
 
-.header-nav li a:hover, .header-nav li.active a {
+.header-nav li a:hover,
+.header-nav li.active a {
     border-bottom: 3px solid #46A358;
     font-weight: bold;
     transform: scale(1.1);
@@ -174,28 +175,40 @@ a {
 
 
 .hero2-container::after {
-content: '';
-clear: both;
-display: block;
+    content: '';
+    clear: both;
+    display: block;
 }
 
 .sidebar {
-    background-color:#FBFBFB;
+    background-color: #FBFBFB;
     width: 310px;
     float: left;
-    margin-right: 50px;
+}
+
+.menu-container {
+    float: right;
+    width: calc(100% - 360px);
+    padding-left: 50px;
 }
 
 .sidebar p {
     padding: 14px 0 7px 18px;
     margin: 0;
-    font-weight: 700; 
+    font-weight: 700;
+    display: flex;
+}
+
+.sidebar-sale p {
+    display: flex;
+    justify-content: center;
 }
 
 .category-list {
     padding-left: 30px;
     list-style: none;
     margin: 0;
+    padding-bottom: 370px;
 }
 
 .category-list li {
@@ -203,30 +216,46 @@ display: block;
     line-height: 40px;
 }
 
-.category-list li:hover, .category-list .active {
-transform: scale(1.1);
-font-weight: 700;
+.category-list li:hover a,
+.plants-choice li:hover a {
+    color: #46A358;
 }
 
-.sidebar-sale-section {
+.plants-choice .active a {
+    border-bottom: solid 2px #46A358;
+    font-weight: 700;
+    color: #46A358;
+}
+
+.category-list .active a {
+    font-weight: 700;
+    color: #46A358;
+}
+
+.plants-choice a {
+    margin-right: 40px;
+    padding-bottom: 7px;
+}
+
+.sidebar-sale {
     background: linear-gradient(to bottom, rgba(70, 163, 88, 0.1), rgba(70, 163, 88, 0.03));
     padding: 0px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* image background? */
 }
 
-.sidebar-sale-section img {
+.sidebar-sale img {
     width: 100%;
     max-width: 300px;
     margin: 0 auto;
 }
 
-.menu-container {
-    padding-right: 0;
-    float: right;
-    width: calc(100% - 360px);
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    vertical-align: top;
 }
 
 .header-menu ul {
@@ -237,30 +266,29 @@ font-weight: 700;
 .header-menu li {
     list-style: none;
     display: inline-block;
+    margin-bottom: 31px;
 }
 
 .plants-choice,
 .sort-container {
     display: inline-block;
-    gap: 38px;
 }
 
-.plants-choice {
-    padding-right: 160px;
+.sort {
+    border: none;
+    color: #3D3D3D;
 }
 
-.plants-choice a {
-    padding-right: 40px;
-    padding-bottom: 7px;
+.sort:hover {
+    cursor: pointer;
 }
 
 .menu-grid {
-    padding-top: 31px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     gap: 30px;
     margin-bottom: 90px;
+    margin-right: -30px;
 }
 
 .product-card {
@@ -268,11 +296,17 @@ font-weight: 700;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: calc(33.33% - 30px);
+}
+
+.product-card p:first-of-type {
+    margin: 0;
+    padding-top: 12px;
 }
 
 .product-card img {
-    background-color:#FBFBFB;
-    object-fit: contain; 
+    background-color: #FBFBFB;
+    object-fit: contain;
     width: 100%;
 }
 
@@ -280,18 +314,18 @@ font-weight: 700;
     color: #46A358;
     font-weight: bold;
     padding-top: 6px;
-    margin-bottom: 70px;
+    margin: 0;
 }
 
-.paggination {
+.pagination {
     display: flex;
-        gap: 8px;
-        justify-content: flex-end;
-        margin-bottom: 82px;
+    gap: 8px;
+    justify-content: flex-end;
+    margin-bottom: 82px;
 }
 
-.paggination a {
-    display: flex; 
+.pagination a {
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 35px;
@@ -301,11 +335,9 @@ font-weight: 700;
     transition: 0.3s;
 }
 
-.paggination a:hover {
-    background-color: 000;
-}
-
-.paggination .active {
+.pagination .active,
+.page:hover,
+.next:hover {
     background-color: #46A358;
     color: white;
     border: none;
