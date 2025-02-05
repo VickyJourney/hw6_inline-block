@@ -525,3 +525,7 @@ a {
     font-weight: 600;
     line-height: 16px;
 }
+
+.blog-container .active, .blog-container a:hover {
+    color: #46A358;
+}
