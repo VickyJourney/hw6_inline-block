@@ -147,6 +147,10 @@ a {
     text-transform: uppercase;
 }
 
+.capitalized {
+    text-transform: capitalize;
+}
+
 .main-text {
     vertical-align: middle;
     display: inline-block;
@@ -355,7 +359,8 @@ a {
     margin-bottom: 82px;
 }
 
-.pagination, .pagination ul {
+.pagination,
+.pagination ul {
     display: flex;
     gap: 8px;
     justify-content: flex-end;
@@ -388,4 +393,135 @@ a {
     font-size: 18px;
     line-height: 16px;
     font-weight: 700;
+}
+
+.two-plants-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clear: both;
+    margin-bottom: 100px;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+
+.two-plants-container h5 {
+    font-size: 18px;
+    font-weight: 900;
+    padding-bottom: 9px;
+}
+
+.two-plants-container p {
+    color: #727272;
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 25px;
+}
+
+.two-plants-container a {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 10px 26px;
+    transition: all 0.3s ease-in-out;
+}
+
+.cactus-content,
+.trends-content {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-basis: 50%;
+    text-align: right;
+    background-color: #FBFBFB;
+    padding-right: 30px;
+    max-width: 45%;
+}
+
+
+.blog-header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 35px;
+}
+
+.blog-header h3,
+.blog-header p,
+.two-plants-container p,
+.two-plants-container h5 {
+    margin: 0;
+}
+
+.blog-header h3 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 16px;
+}
+
+.blog-header p {
+    color: #727272;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.blog-container {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    margin-bottom: 60px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.blog-post {
+    background-color: #FBFBFB;
+    flex-basis: calc(25% - 35px);
+}
+
+.blog-post img:first-of-type,
+.two-plants-container img:first-of-type {
+    max-width: 100%;
+}
+
+.post-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 10px;
+    flex-basis: 50%;
+}
+
+.post-date {
+    color: #46A358;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.post-date span::before {
+    content: "| ";
+}
+
+.blog-container h5 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.blog-container p {
+    color: #727272;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.blog-container a {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
 }
