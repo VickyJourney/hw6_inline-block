@@ -46,6 +46,15 @@ h1 {
     margin: 0;
 }
 
+h3, h5 {
+color: #3D3D3D;
+margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
 a {
     text-decoration: none;
     display: inline-block;
@@ -165,13 +174,11 @@ a {
     color: #3D3D3D;
     line-height: 16px;
     padding-left: 3px;
-    margin: 0;
 }
 
 .p2 {
     color: #727272;
     padding: 5px 0 0 3px;
-    margin: 0;
     margin-bottom: 44px;
     font-size: 14px;
     line-height: 24px;
@@ -216,7 +223,6 @@ a {
 
 .sidebar h3 {
     padding: 14px 0 7px 18px;
-    margin: 0;
     font-weight: 700;
     font-size: 18px;
     line-height: 16px;
@@ -334,7 +340,6 @@ a {
 }
 
 .product-card p:first-of-type {
-    margin: 0;
     padding-top: 12px;
     line-height: 16px;
 }
@@ -410,7 +415,6 @@ a {
     font-size: 18px;
     font-weight: 900;
     padding-bottom: 9px;
-    color: #3D3D3D;
 }
 
 .two-plants-container p {
@@ -454,21 +458,13 @@ a {
     margin-bottom: 35px;
     color: #727272;
     font-size: 14px;
-    font-weight: 400;
 }
 
-.blog-hero-container h3,
-.blog-hero-container p,
-.two-plants-container p,
-.two-plants-container h5 {
-    margin: 0;
-}
 
 .blog-hero-container h3 {
     font-size: 30px;
     font-weight: 700;
     line-height: 32px;
-    color: #3D3D3D;
     margin-bottom: 15px;
 }
 
@@ -482,6 +478,26 @@ text-align: center;
     gap: 35px;
     margin-bottom: 60px;
     flex-wrap: wrap;
+    color: #727272;
+    margin: 0;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.blog-container h5 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.blog-container p {
+    padding-bottom: 5px;
+}
+
+.blog-container a {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
 }
 
 .blog-post {
@@ -507,27 +523,6 @@ text-align: center;
 
 .post-date span::before {
     content: "| ";
-}
-
-.blog-container h5 {
-    margin: 0;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 26px;
-}
-
-.blog-container p {
-    color: #727272;
-    margin: 0;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 22px;
-}
-
-.blog-container a {
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 16px;
 }
 
 .blog-container a span {
