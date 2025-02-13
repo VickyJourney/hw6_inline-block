@@ -571,14 +571,18 @@ a {
     position: absolute;
     bottom: 53px;
     display: none;
+    left: 0;
+    right: 0;
+    text-align: center;
 }
 
 .product-card-icons svg {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     margin: 7px;
     border-radius: 4px;
-    padding: 1px;
+    padding: 6px;
+    background-color: #FFFFFF;
 }
 
 .product-card:before {
@@ -597,7 +601,6 @@ a {
 .card-icon-link:hover svg {
     fill: #46A358;
 }
-
 
 .header-nav-list-item {
     position: relative;
@@ -649,11 +652,16 @@ a {
     text-align: start;
 }
 
-/* .header-nav-list-submenu1-item li:has(ul)::after {
-    content: "";
-    background-image: url(../images/symbol-defs.svg#icon-arrow-r-black);
-    background-repeat: no-repeat;
-    background-position: 90% 50%;
+.header-nav-list-submenu1-item svg {
+    width: 10px;
+    height: 10px;
+    fill: #3D3D3D;
+    position: absolute;
+    right: 12px;
+    top: 40%;
+}
 
-    I am still working on it ;)
+.header-nav-list-submenu1-item a:hover svg {
+    fill: #FFFFFF;
+    transform: rotate(180deg);
 }
