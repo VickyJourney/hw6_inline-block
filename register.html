@@ -1,151 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Greenshop Register</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      * {
-        font-family: "PT Sans", serif;
-        font-weight: 400;
-        font-style: normal;
-      }
 
-      a {
-        text-decoration: none;
-      }
-      .button {
-        width: 300px;
-        background: #46a358;
-        color: #fff;
-        border: 1px solid #46a358;
-        padding: 10px;
-        text-align: center;
-        font-size: 16px;
-        border-radius: 5px;
-        cursor: pointer;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Greenshop Register</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet" />
+  <style>
+    * {
+      font-family: "PT Sans", serif;
+      font-weight: 400;
+      font-style: normal;
+    }
 
-      .button:hover {
-        background: #fff;
-        color: #46a358;
-      }
+    a {
+      text-decoration: none;
+    }
 
-      .social-login {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        width: 300px;
-        height: 40px;
-        border: 1px solid #eaeaea;
-        text-decoration: none;
-        gap: 10px;
-        transition: 0.2s;
-      }
+    .button {
+      width: 300px;
+      background: #46a358;
+      color: #fff;
+      border: 1px solid #46a358;
+      padding: 10px;
+      text-align: center;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
 
-      .social-login:hover {
-        box-shadow: 4px 4px 4px rgb(0, 0, 0, 0.42);
-      }
+    .button:hover {
+      background: #fff;
+      color: #46a358;
+    }
 
-      input {
-        border: 1px solid #eaeaea;
-        border-radius: 5px;
-        box-sizing: border-box;
-        height: 40px;
-        padding: 0 12px;
-        margin-bottom: 20px;
-        display: inline-block;
-        width: 300px;
-      }
+    .social-login {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 300px;
+      height: 40px;
+      border: 1px solid #eaeaea;
+      text-decoration: none;
+      gap: 10px;
+      transition: 0.2s;
+    }
 
-      .line-container {
-        display: grid;
-        grid-template-columns: 1fr auto 1fr;
-        align-items: center;
-        width: 300px;
-        justify-content: center;
-        margin: 20px 0;
-      }
+    .social-login:hover {
+      box-shadow: 4px 4px 4px rgb(0, 0, 0, 0.42);
+    }
 
-      .line {
-        height: 1px;
-        background-color: #ccc;
-      }
+    input {
+      border: 1px solid #eaeaea;
+      border-radius: 5px;
+      box-sizing: border-box;
+      height: 40px;
+      padding: 0 12px;
+      margin-bottom: 20px;
+      display: inline-block;
+      width: 300px;
+    }
 
-      .text {
-        margin: 0 10px;
-        color: #555;
-        font-size: 14px;
-      }
+    .line-container {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      width: 300px;
+      justify-content: center;
+      margin: 20px 0;
+    }
 
-      body {
-        display: flex;
-        margin-top: auto;
-        text-align: center;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-      }
+    .line {
+      height: 1px;
+      background-color: #ccc;
+    }
 
-      .subtitle {
-        text-align: center;
-        word-break: break-word;
-        width: 300px;
-      }
-    </style>
-  </head>
+    .text {
+      margin: 0 10px;
+      color: #555;
+      font-size: 14px;
+    }
 
-  <body>
-    <h1>Login | <span style="color: #46a358">Register</span></h1>
-    <p class="subtitle">Enter your username, email and password to register.</p>
-    <form action="/submit" method="post">
-      <input type="text" name="username" placeholder="Username" required />
-      <br />
-      <input type="email" name="email" placeholder="Email adress" required />
-      <br />
-      <input
-        type="password"
-        name="password"
-        placeholder="Password"
-        minlength="6"
-        required
-      />
-      <br />
-      <input
-        type="password"
-        name="password2"
-        placeholder="Confirm password"
-        minlength="6"
-        required
-      />
-      <br />
-      <input type="submit" value="Register" class="button" /> <br />
-    </form>
+    body {
+      display: flex;
+      margin-top: auto;
+      text-align: center;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
 
-    <div class="line-container">
-      <div class="line"></div>
-      <div class="text">Or register with</div>
-      <div class="line"></div>
-    </div>
+    .subtitle {
+      text-align: center;
+      word-break: break-word;
+      width: 300px;
+    }
+  </style>
+</head>
 
-    <button type="button" class="social-login">
-      <img src="images/google.png" alt="Google" width="20px" />
-      <span>Continue with Google</span>
-    </button>
-
+<body>
+  <h1>Login | <span style="color: #46a358">Register</span></h1>
+  <p class="subtitle">Enter your username, email and password to register.</p>
+  <form action="/submit" method="post">
+    <input type="text" name="username" placeholder="Username" required />
     <br />
-    <button type="button" class="social-login">
-      <img src="images/fb.png" alt="Facebook" width="20px" />
-      <span>Continue with Facebook</span>
-    </button>
-  </body>
+    <input type="email" name="email" placeholder="Email adress" required />
+    <br />
+    <input type="password" name="password" placeholder="Password" minlength="6" required />
+    <br />
+    <input type="password" name="password2" placeholder="Confirm password" minlength="6" required />
+    <br />
+    <input type="submit" value="Register" class="button" /> <br />
+  </form>
+
+  <div class="line-container">
+    <div class="line"></div>
+    <div class="text">Or register with</div>
+    <div class="line"></div>
+  </div>
+
+  <button type="button" class="social-login">
+    <img src="images/google.png" alt="Google" width="20px" />
+    <span>Continue with Google</span>
+  </button>
+
+  <br />
+  <button type="button" class="social-login">
+    <img src="images/fb.png" alt="Facebook" width="20px" />
+    <span>Continue with Facebook</span>
+  </button>
+</body>
+
 </html>

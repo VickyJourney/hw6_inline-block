@@ -26,7 +26,7 @@
               <li class="submenu1-item">
                 <a href="#">Priming
                   <svg width="10" height="10">
-                    <use href="images/symbol-defs.svg#icon-arrow-r-black"></use>
+                    <use href="./images/sprite.svg#icon-arrow-small"></use>
                   </svg>
                 </a>
                 <ul class="submenu2">
@@ -43,10 +43,20 @@
           <li class="header-nav-list-item"><a href="#">Blogs</a></li>
         </ul>
       </nav>
-      <a href="register.html" class="button button--small">
-        <img src="images/Logout.svg" class="icon" alt="logout icon">
-        <span>Login</span>
-      </a>
+      <div class="icon-button-container" >
+        <a href="#"><svg class="header-icon">
+          <use href="./images/sprite.svg#icon-frame"></use>
+        </svg></a>
+        <a href="#"><svg class="header-icon">
+            <use href="./images/sprite.svg#icon-shopping"></use>
+          </svg></a>
+        <a href="register.html" class="button button--small">
+          <svg class="icon-white" width="20" height="20">
+            <use href="./images/sprite.svg#icon-logout"></use>
+          </svg>
+          <span>Login</span>
+        </a>
+      </div>
     </header>
     <main>
       <div class="main-container">
@@ -72,15 +82,37 @@
             <div>
               <h3>Categories</h3>
               <ul class="category-list">
-                <li><a href="#">House Plants</a></li>
-                <li><a href="#">Potter Plants</a></li>
-                <li><a href="#">Seeds</a></li>
-                <li><a href="#">Small Plants</a></li>
-                <li><a href="#">Big Plants</a></li>
-                <li><a href="#">Succulents</a></li>
-                <li><a href="#">Terrariums</a></li>
-                <li><a href="#">Gardening</a></li>
-                <li><a href="#">Accessories</a></li>
+                <li><a class="category-type" href="#"><span>House Plants</span><span>(33)</span></a></li>
+                <li><a class="category-type" href="#"><span>Potter Plants</span><span>(12)</span></a></li>
+                <li><a class="category-type" href="#"><span>Seeds</span><span>(65)</span></a></li>
+                <li><a class="category-type" href="#"><span>Small Plants</span><span>(39)</span></a></li>
+                <li><a class="category-type" href="#"><span>Big Plants</span><span>(23)</span></a></li>
+                <li><a class="category-type" href="#"><span>Succulents</span><span>(17)</span></a></li>
+                <li><a class="category-type" href="#"><span>Terrariums</span><span>(19)</span></a></li>
+                <li><a class="category-type" href="#"><span>Gardening</span><span>(13)</span></a></li>
+                <li><a class="category-type" href="#"><span>Accessories</span><span>(18)</span></a></li>
+              </ul>
+            </div>
+            <div class="price-range-container">
+              <h3 class="capitalized">Price range</h3>
+              <form class="price-range" action="/submit" method="post">
+                <input type="range" min="39" max="1500" value="50" class="slider" id="price-slider">
+                <p>Price:<span>&#36;39-&#36;1250</span></p>
+                <input type="submit" value="Filter" class="button price-button">
+              </form>
+            </div>
+            <div class="size-container">
+              <h3>Size</h3>
+              <ul class="size-list">
+                <li>
+                  <a class="size" href="#"><span>Small</span><span>(119)</span></a>
+                </li>
+                <li>
+                  <a class="size" href="#"><span>Medium</span><span>(86)</span></a>
+                </li>
+                <li>
+                  <a class="size" href="#"><span>Large</span><span>(78)</span></a>
+                </li>
               </ul>
             </div>
             <div class="sidebar-sale">
@@ -114,19 +146,19 @@
                 <div class="product-card-icons">
                   <a class="card-icon-link" href="#">
                     <svg width="20" height="20">
-                      <use href="images/symbol-defs.svg#icon-shopping-new">
+                      <use href="./images/sprite.svg#icon-shopping">
                       </use>
                     </svg>
                   </a>
                   <a class="card-icon-link" href="#">
                     <svg width="20" height="20">
-                      <use href="images/symbol-defs.svg#icon-heart">
+                      <use href="./images/sprite.svg#icon-heart">
                       </use>
                     </svg>
                   </a>
                   <a class="card-icon-link" href="#">
                     <svg width="20" height="20">
-                      <use href="images/symbol-defs.svg#icon-frame"></use>
+                      <use href="./images/sprite.svg#icon-frame"></use>
                     </svg>
                   </a>
                 </div>
@@ -140,19 +172,19 @@
                 <div class="product-card-icons">
                   <a class="card-icon-link" href="#">
                     <svg width="20" height="20">
-                      <use href="images/symbol-defs.svg#icon-shopping-new">
+                      <use href="./images/sprite.svg#icon-shopping">
                       </use>
                     </svg>
                   </a>
                   <a class="card-icon-link" href="#">
                     <svg width="20" height="20">
-                      <use href="images/symbol-defs.svg#icon-heart">
+                      <use href="./images/sprite.svg#icon-heart">
                       </use>
                     </svg>
                   </a>
                   <a class="card-icon-link" href="#">
                     <svg width="20" height="20">
-                      <use href="images/symbol-defs.svg#icon-frame"></use>
+                      <use href="./images/sprite.svg#icon-frame"></use>
                     </svg>
                   </a>
                 </div>
@@ -166,19 +198,19 @@
                 <div class="product-card-icons">
                   <a class="card-icon-link" href="#">
                     <svg width="20" height="20">
-                      <use href="images/symbol-defs.svg#icon-shopping-new">
+                      <use href="./images/sprite.svg#icon-shopping">
                       </use>
                     </svg>
                   </a>
                   <a class="card-icon-link" href="#">
                     <svg width="20" height="20">
-                      <use href="images/symbol-defs.svg#icon-heart">
+                      <use href="./images/sprite.svg#icon-heart">
                       </use>
                     </svg>
                   </a>
                   <a class="card-icon-link" href="#">
                     <svg width="20" height="20">
-                      <use href="images/symbol-defs.svg#icon-frame"></use>
+                      <use href="./images/sprite.svg#icon-frame"></use>
                     </svg>
                   </a>
                 </div>
@@ -194,19 +226,19 @@
                 <div class="product-card-icons">
                   <a class="card-icon-link" href="#">
                     <svg width="20" height="20">
-                      <use href="images/symbol-defs.svg#icon-shopping-new">
+                      <use href="./images/sprite.svg#icon-shopping">
                       </use>
                     </svg>
                   </a>
                   <a class="card-icon-link" href="#">
                     <svg width="20" height="20">
-                      <use href="images/symbol-defs.svg#icon-heart">
+                      <use href="./images/sprite.svg#icon-heart">
                       </use>
                     </svg>
                   </a>
                   <a class="card-icon-link" href="#">
                     <svg width="20" height="20">
-                      <use href="images/symbol-defs.svg#icon-frame"></use>
+                      <use href="./images/sprite.svg#icon-frame"></use>
                     </svg>
                   </a>
                 </div>
@@ -220,19 +252,19 @@
                 <div class="product-card-icons">
                   <a class="card-icon-link" href="#">
                     <svg width="20" height="20">
-                      <use href="images/symbol-defs.svg#icon-shopping-new">
+                      <use href="./images/sprite.svg#icon-shopping">
                       </use>
                     </svg>
                   </a>
                   <a class="card-icon-link" href="#">
                     <svg width="20" height="20">
-                      <use href="images/symbol-defs.svg#icon-heart">
+                      <use href="./images/sprite.svg#icon-heart">
                       </use>
                     </svg>
                   </a>
                   <a class="card-icon-link" href="#">
                     <svg width="20" height="20">
-                      <use href="images/symbol-defs.svg#icon-frame"></use>
+                      <use href="./images/sprite.svg#icon-frame"></use>
                     </svg>
                   </a>
                 </div>
@@ -246,19 +278,19 @@
                 <div class="product-card-icons">
                   <a class="card-icon-link" href="#">
                     <svg width="20" height="20">
-                      <use href="images/symbol-defs.svg#icon-shopping-new">
+                      <use href="./images/sprite.svg#icon-shopping">
                       </use>
                     </svg>
                   </a>
                   <a class="card-icon-link" href="#">
                     <svg width="20" height="20">
-                      <use href="images/symbol-defs.svg#icon-heart">
+                      <use href="./images/sprite.svg#icon-heart">
                       </use>
                     </svg>
                   </a>
                   <a class="card-icon-link" href="#">
                     <svg width="20" height="20">
-                      <use href="images/symbol-defs.svg#icon-frame"></use>
+                      <use href="./images/sprite.svg#icon-frame"></use>
                     </svg>
                   </a>
                 </div>
@@ -272,19 +304,19 @@
                 <div class="product-card-icons">
                   <a class="card-icon-link" href="#">
                     <svg width="20" height="20">
-                      <use href="images/symbol-defs.svg#icon-shopping-new">
+                      <use href="./images/sprite.svg#icon-shopping">
                       </use>
                     </svg>
                   </a>
                   <a class="card-icon-link" href="#">
                     <svg width="20" height="20">
-                      <use href="images/symbol-defs.svg#icon-heart">
+                      <use href="./images/sprite.svg#icon-heart">
                       </use>
                     </svg>
                   </a>
                   <a class="card-icon-link" href="#">
                     <svg width="20" height="20">
-                      <use href="images/symbol-defs.svg#icon-frame"></use>
+                      <use href="./images/sprite.svg#icon-frame"></use>
                     </svg>
                   </a>
                 </div>
@@ -298,19 +330,19 @@
                 <div class="product-card-icons">
                   <a class="card-icon-link" href="#">
                     <svg width="20" height="20">
-                      <use href="images/symbol-defs.svg#icon-shopping-new">
+                      <use href="./images/sprite.svg#icon-shopping">
                       </use>
                     </svg>
                   </a>
                   <a class="card-icon-link" href="#">
                     <svg width="20" height="20">
-                      <use href="images/symbol-defs.svg#icon-heart">
+                      <use href="./images/sprite.svg#icon-heart">
                       </use>
                     </svg>
                   </a>
                   <a class="card-icon-link" href="#">
                     <svg width="20" height="20">
-                      <use href="images/symbol-defs.svg#icon-frame"></use>
+                      <use href="./images/sprite.svg#icon-frame"></use>
                     </svg>
                   </a>
                 </div>
@@ -324,19 +356,19 @@
                 <div class="product-card-icons">
                   <a class="card-icon-link" href="#">
                     <svg width="20" height="20">
-                      <use href="images/symbol-defs.svg#icon-shopping-new">
+                      <use href="./images/sprite.svg#icon-shopping">
                       </use>
                     </svg>
                   </a>
                   <a class="card-icon-link" href="#">
                     <svg width="20" height="20">
-                      <use href="images/symbol-defs.svg#icon-heart">
+                      <use href="./images/sprite.svg#icon-heart">
                       </use>
                     </svg>
                   </a>
                   <a class="card-icon-link" href="#">
                     <svg width="20" height="20">
-                      <use href="images/symbol-defs.svg#icon-frame"></use>
+                      <use href="./images/sprite.svg#icon-frame"></use>
                     </svg>
                   </a>
                 </div>
@@ -354,7 +386,10 @@
                 <li><a href="?page=3" class="page">3</a></li>
                 <li><a href="?page=4" class="page">4</a></li>
                 <li><a href="?page=next" class="next">
-                    <img src="images/Arrow.svg" alt="next page"></a></li>
+                    <svg class="icon-next" width="18" height="18">
+                      <use href="./images/sprite.svg#icon-arrow-soft"></use>
+                    </svg>
+                  </a></li>
               </ul>
             </div>
           </div>
@@ -368,7 +403,9 @@
               <h5 class="uppercase">Summer cactus & succulents</h5>
               <p>We are an online plant shop offering a wide range of cheap and trendy plants</p>
               <a href="#" class="button capitalized">Find more
-                <img src="images/Arrow-R-white.svg" alt="arrow-right">
+                <svg class="arrow-button" width="20" height="20">
+                  <use href="./images/sprite.svg#icon-arrow-big"></use>
+                </svg>
               </a>
             </div>
           </div>
@@ -380,7 +417,9 @@
               <h5 class="uppercase">Styling Trends & much more</h5>
               <p>We are an online plant shop offering a wide range of cheap and trendy plants</p>
               <a href="#" class="button capitalized">Find more
-                <img src="images/Arrow-R-white.svg" alt="arrow-right">
+                <svg class="arrow-button" width="20" height="20">
+                  <use href="./images/sprite.svg#icon-arrow-big"></use>
+                </svg>
               </a>
             </div>
           </div>
@@ -402,7 +441,9 @@
                 <p>Cacti are succulents are easy care plants for any home or patio.</p>
                 <a href="#">
                   <span>Read more</span>
-                  <img src="images/arrow-right.svg" alt="arrow-right">
+                  <svg class="read-more-arrow" width="16" height="16">
+                    <use href="./images/sprite.svg#icon-arrow-big"></use>
+                  </svg>
                 </a>
               </div>
             </div>
@@ -417,7 +458,9 @@
                 <p>Best in hanging baskets. Prefers medium to high light.</p>
                 <a href="#">
                   <span>Read more</span>
-                  <img src="images/arrow-right.svg" alt="arrow-right">
+                  <svg class="read-more-arrow" width="16" height="16">
+                    <use href="./images/sprite.svg#icon-arrow-big"></use>
+                  </svg>
                 </a>
               </div>
             </div>
@@ -432,7 +475,9 @@
                 <p>Cacti are succulents are easy care plants for any home or patio.</p>
                 <a href="#">
                   <span>Read more</span>
-                  <img src="images/arrow-right.svg" alt="arrow-right">
+                  <svg class="read-more-arrow" width="16" height="16">
+                    <use href="./images/sprite.svg#icon-arrow-big"></use>
+                  </svg>
                 </a>
               </div>
             </div>
@@ -447,7 +492,9 @@
                 <p>The benefits of houseplants are endless. In addition to...</p>
                 <a href="#">
                   <span>Read more</span>
-                  <img src="images/arrow-right.svg" alt="arrow-right">
+                  <svg class="read-more-arrow" width="16" height="16">
+                    <use href="./images/sprite.svg#icon-arrow-big"></use>
+                  </svg>
                 </a>
               </div>
             </div>
@@ -485,9 +532,19 @@
       </div>
       <address class="footer_adress_container">
         <img src="images/Logo1.svg" alt="logo-greenshop">
-        <p class="street">70 West Buckingham Ave. <br>Farmingdale, NY 11735</p>
-        <a class="mail" href="mailto:contact@greenshop.com">contact@greenshop.com</a>
-        <a class="phone" href="tel:+8801911717490">+88 01911 717 490</a>
+        <div class="icon-container"><svg class="adress-svg">
+            <use href="./images/sprite.svg#icon-location"></use>
+          </svg><a href="#" class="street" >70 West Buckingham Ave. Farmingdale, NY 11735</a></div>
+        <div class="icon-container"><svg class="adress-svg">
+            <use href="./images/sprite.svg#icon-mail"></use>
+          </svg>
+          <a class="mail" href="mailto:contact@greenshop.com">contact@greenshop.com</a>
+        </div>
+        <div class="icon-container"><svg class="adress-svg">
+            <use href="./images/sprite.svg#icon-phone"></use>
+          </svg>
+          <a class="phone" href="tel:+8801911717490">+88 01911 717 490</a>
+        </div>
       </address>
       <div class="footer_section2">
         <nav class="footer_nav">
@@ -527,14 +584,42 @@
         <div class="footer_social_container">
           <h4>Social Media</h4>
           <ul class="media_icons">
-            <li><a href="#" class="social_icon facebook" target="_blank"></a></li>
-            <li><a href="#" class="social_icon instagram" target="_blank"></a></li>
-            <li><a href="#" class="social_icon twitter" target="_blank"></a></li>
-            <li><a href="#" class="social_icon linkedin" target="_blank"></a></li>
-            <li><a href="#" class="social_icon youtube" target="_blank"></a></li>
+            <li><a href="#" class="social_icon" target="_blank">
+                <svg width="16" height="16">
+                  <use href="./images/sprite.svg#icon-facebook1"></use>
+                </svg></a></li>
+            <li><a href="#" class="social_icon" target="_blank">
+                <svg width="16" height="16">
+                  <use href="./images/sprite.svg#icon-instagram"></use>
+                </svg></a></li>
+            <li><a href="#" class="social_icon" target="_blank">
+                <svg width="16" height="16">
+                  <use href="./images/sprite.svg#icon-twitter"></use>
+                </svg></a></li>
+            <li><a href="#" class="social_icon" target="_blank">
+                <svg width="16" height="16">
+                  <use href="./images/sprite.svg#icon-linkedin"></use>
+                </svg></a></li>
+            <li><a href="#" class="social_icon" target="_blank">
+                <svg width="16" height="16">
+                  <use href="./images/sprite.svg#icon-youtube"></use>
+                </svg></a></li>
           </ul>
           <h4>We accept</h4>
-          <img src="./images/amex_paypal.png" class="payment_methods" alt="payment_methods">
+          <div class="payment_methods">
+            <svg width="50" height="50">
+              <use href="./images/sprite.svg#icon-paypal"></use>
+            </svg>
+            <svg width="50" height="50">
+              <use href="./images/sprite.svg#icon-mastercard"></use>
+            </svg>
+            <svg width="50" height="50">
+              <use href="./images/sprite.svg#icon-visa"></use>
+            </svg>
+            <svg width="50" height="50">
+              <use href="./images/sprite.svg#icon-amex"></use>
+            </svg>
+          </div>
         </div>
       </div>
       <p class="footer_rights">&#169; 2021 GreenShop. All Rights Reserved.</p>
