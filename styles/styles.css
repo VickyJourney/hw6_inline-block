@@ -325,34 +325,36 @@ a {
     line-height: 16px;
 }
 
-.sidebar-sale p {
-    font-size: 23px;
-    font-weight: 700;
-    display: flex;
-    justify-content: center;
-}
-
-.category-list,
-.size-list {
+.sidebar-list {
     padding-left: 12px;
     list-style: none;
     margin: 0 0 30px;
+    display: flex;
+    flex-direction: column;
 }
 
-.category-list li,
-.size-list li {
+.sidebar-link {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar-list-item {
     font-size: 15px;
     line-height: 40px;
 }
 
-.category-list li:hover {
+.sidebar-list-item:hover {
     color: #46A358;
+}
+
+.sidebar-link:hover .sidebar-type {
     transform: translateX(5px);
 }
 
-.category-type {
-    display: flex;
-    justify-content: space-between;
+.price-button {
+    padding: 8px 24px;
+    cursor: pointer;
 }
 
 .price-range-container {
@@ -370,7 +372,8 @@ a {
     width: 220px;
 }
 
-.price-range-container h3, .price-range-container p {
+.price-range-container h3,
+.price-range-container p {
     padding: 0;
     margin-bottom: 20px;
 }
@@ -380,27 +383,6 @@ a {
     font-weight: 700;
     padding-left: 4px;
 }
-
-.size-list {
-    display: flex;
-    flex-direction: column;
-}
-
-.price-button {
-    padding: 8px 24px;
-    cursor: pointer;
-}
-
-.size {
-    display: flex;
-    justify-content: space-between;
-}
-
-.size-list li:hover {
-    color: #46A358;
-    transform: translateX(5px);
-}
-
 
 .plants-choice li:hover {
     color: #46A358;
@@ -443,6 +425,13 @@ a {
     background: linear-gradient(to bottom, rgba(70, 163, 88, 0.1), rgba(70, 163, 88, 0.03));
     padding: 0px 20px;
     margin: 0 -18px -18px -18px
+}
+
+.sidebar-sale p {
+    font-size: 23px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
 }
 
 .sidebar-sale img {
@@ -578,8 +567,6 @@ a {
     font-size: 18px;
     line-height: 16px;
     font-weight: 700;
-    transform: scale(1.2);
-    transition: scale 0.2s linear;
 }
 
 .two-plants-container {
@@ -757,7 +744,6 @@ a {
 .product-card-icons svg {
     width: 30px;
     height: 30px;
-    margin: 7px;
     border-radius: 4px;
     padding: 6px;
     background-color: #FFFFFF;
@@ -1009,4 +995,171 @@ footer ul {
     font-size: 14px;
     line-height: 30px;
     padding: 6px 0 22px 0;
+}
+
+
+.preloader-container {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preloader {
+    width: 30px;
+    height: 30px;
+    border: 2px solid rgba(173, 216, 230, 0.3);
+    border-top: 2px solid rgba(0, 139, 139, 0.7);
+    box-shadow: 0 0 10px rgba(0, 139, 139, 0.4);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: loading 1s linear infinite, fadeout 1s linear forwards 1s;
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadeout {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+
+.burger-header {
+    position: relative;
+}
+
+.burger {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    cursor: pointer;
+    top: 14px;
+    left: 14px;
+    z-index: 100;
+}
+
+.burger span,
+.burger:before,
+.burger:after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+}
+
+.burger span {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.burger::before {
+    top: 20%;
+    left: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.burger::after {
+    bottom: 20%;
+    left: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.my-checkbox-label {
+    display: inline-block;
+}
+
+.my-checkbox-label::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    display: inline-block;
+    top: 10px;
+    left: 10px;
+}
+
+.checkbox-input {
+    position: absolute;
+    left: -9999px;
+}
+
+.checkbox-input:checked+.burger span {
+    opacity: 0;
+}
+
+.checkbox-input:checked+.burger::before {
+    top: 47%;
+    transform: rotate(45deg);
+}
+
+.checkbox-input:checked+.burger::after {
+    bottom: 43%;
+    transform: rotate(-45deg);
+}
+
+.my-checkbox-label:has(.checkbox-input:checked)+.menu {
+    top: 0;
+    transform: translateX(0);
+}
+
+.menu {
+    width: 200px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+    background-color: lightseagreen;
+    align-items: center;
+    line-height: 30px;
+    position: absolute;
+    top: 0;
+    transform: translateX(-100%);
+    transition: transform 0.4s ease-in-out;
+    height: 100vh;
+}
+
+.menu-ul {
+    list-style: none;
+    padding: 40px 0 0 0;
+    margin: 0;
+}
+
+.menu li {
+    width: 100%;
+}
+
+.menu a {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li:hover {
+    color: white;
+    background-color: darkcyan;
 }
