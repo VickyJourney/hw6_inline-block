@@ -35,6 +35,8 @@
 
 body {
     font-family: 'Cera Pro', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
     color: #3D3D3D;
 }
 
@@ -124,7 +126,7 @@ a {
     height: 3px;
     background-color: #46A358;
     position: absolute;
-    bottom: -24px;
+    bottom: -21px;
     left: 0;
     opacity: 0;
     transform: scaleX(0);
@@ -283,7 +285,6 @@ a {
 
 .p1 {
     font-weight: 600;
-    font-size: 14px;
     color: #3D3D3D;
     line-height: 16px;
     padding-left: 3px;
@@ -293,7 +294,6 @@ a {
     color: #727272;
     padding: 5px 0 0 3px;
     margin-bottom: 44px;
-    font-size: 14px;
     line-height: 24px;
 }
 
@@ -451,6 +451,7 @@ a {
     width: 100%;
     vertical-align: top;
     margin-bottom: 31px;
+    align-items: center;
 }
 
 .header-menu ul {
@@ -475,6 +476,10 @@ a {
     color: #3D3D3D;
     font-size: 15px;
     line-height: 16px;
+}
+
+.sort-c {
+    padding-bottom: 7px;
 }
 
 .sort-container label {
@@ -589,9 +594,7 @@ a {
     clear: both;
     margin-bottom: 100px;
     gap: 28px;
-    flex-wrap: wrap;
     color: #727272;
-    font-size: 14px;
     padding-top: 28px;
 }
 
@@ -607,7 +610,6 @@ a {
 }
 
 .two-plants-container a {
-    font-size: 14px;
     font-weight: 600;
     line-height: 20px;
     padding: 10px 26px;
@@ -646,7 +648,6 @@ a {
 .blog-header {
     margin-bottom: 35px;
     color: #727272;
-    font-size: 14px;
 }
 
 
@@ -668,7 +669,6 @@ a {
     margin-bottom: 60px;
     flex-wrap: wrap;
     color: #727272;
-    font-size: 14px;
     line-height: 22px;
 }
 
@@ -679,7 +679,6 @@ a {
 }
 
 .blog-container a {
-    font-size: 14px;
     font-weight: 600;
     line-height: 16px;
 }
@@ -701,7 +700,6 @@ a {
 .post-date {
     color: #46A358;
     font-weight: 600;
-    font-size: 14px;
     line-height: 16px;
 }
 
@@ -811,7 +809,6 @@ footer ul {
 }
 
 .footer_section1 p {
-    font-size: 14px;
     color: #727272;
 }
 
@@ -864,18 +861,12 @@ footer ul {
     display: flex;
 }
 
-.footer_form p {
-    font-size: 13px;
-    line-height: 22px;
-}
-
 .email-container-form {
     display: flex;
 }
 
 .email-form {
     border: none;
-    font-size: 14px;
     color: rgba(172, 172, 172, 1);
     padding: 12px;
     width: 100%;
@@ -901,7 +892,6 @@ footer ul {
 .footer_adress_container {
     display: flex;
     justify-content: space-between;
-    font-size: 14px;
     line-height: 22px;
     color: #3D3D3D;
     font-style: normal;
@@ -964,7 +954,6 @@ footer ul {
 }
 
 .footer_list2 li a {
-    font-size: 14px;
     line-height: 30px;
 }
 
@@ -1005,13 +994,9 @@ footer ul {
 
 .footer_rights {
     text-align: center;
-    font-size: 14px;
     line-height: 30px;
     padding: 6px 0 22px 0;
 }
-
-
-
 
 .burger {
     width: 24px;
@@ -1080,13 +1065,15 @@ footer ul {
 }
 
 .checkbox-input:checked+.burger::before {
-    top: 47%;
+    top: 48%;
     transform: rotate(45deg);
+    background-color: white;
 }
 
 .checkbox-input:checked+.burger::after {
     bottom: 43%;
     transform: rotate(-45deg);
+    background-color: white;
 }
 
 .my-checkbox-label:has(.checkbox-input:checked)+.menu-ul {
@@ -1114,19 +1101,24 @@ footer ul {
 
 
 @media (max-width: 1024px) {
+    .body {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
     .main-text h1 {
         font-size: 50px;
         line-height: 50px;
     }
 
     .main-text .p2 {
-        font-size: 13px;
         margin-bottom: 20px;
     }
 
     .sidebar {
         flex-basis: 24%;
         padding: 2px 18px 18px;
+        min-width: 180px;
     }
 
     .sort {
@@ -1142,7 +1134,7 @@ footer ul {
     }
 
     .two-plants-container {
-        margin-bottom: 25px;
+        margin-bottom: 45px;
     }
 
     .two-plants-text {
@@ -1153,8 +1145,6 @@ footer ul {
         gap: 10px;
         justify-content: space-around;
         margin-bottom: 25px;
-        font-size: 14px;
-        line-height: 14px;
     }
 
     .blog-header {
@@ -1177,6 +1167,17 @@ footer ul {
         flex-basis: 60%;
     }
 
+    .footer_list2 li {
+        max-width: 130px;
+
+    }
+
+    .discount-mark {
+        padding: 6px;
+        font-size: 15px;
+        line-height: 15px;
+    }
+
 }
 
 @media (max-width: 870px) {
@@ -1196,14 +1197,7 @@ footer ul {
         margin-top: 0px;
     }
 
-    .footer_form p {
-        font-size: 14px;
-        line-height: 14px;
-    }
-
     .footer_adress_container {
-        font-size: 14px;
-        line-height: 14px;
         padding: 10px;
     }
 
@@ -1220,9 +1214,14 @@ footer ul {
 
     }
 
+
 }
 
 @media (max-width: 768px) {
+    .body {
+        font-size: 13px;
+    }
+
     .menu-ul {
         position: fixed;
         display: block;
@@ -1326,20 +1325,12 @@ footer ul {
         line-height: 40px;
     }
 
-    .main-text .p2 {
-        font-size: 14px;
-        margin-bottom: 20px;
-        line-height: 15px;
-
-    }
-
     .sidebar h3 {
         font-size: 16px;
         padding-top: 2px;
     }
 
     .sidebar-list-item {
-        font-size: 13px;
         line-height: 34px;
     }
 
@@ -1362,21 +1353,12 @@ footer ul {
 
     .product-card p:first-of-type {
         padding-top: 10px;
-        font-size: 14px;
-    }
-
-    .price,
-    .discount-price {
-        font-size: 14px;
-        line-height: 14px;
     }
 
     .pagination a,
     .pagination .active {
         width: 28px;
         height: 28px;
-        font-size: 13px;
-        line-height: 13px;
     }
 
     .plants-choice {
@@ -1391,25 +1373,17 @@ footer ul {
         padding: 4px 10px 8px;
     }
 
-    .sort-container label {
-        font-size: 14px;
-    }
-
-    .sort {
-        font-size: 14px;
-    }
-
     .main-text .p1 {
-        font-size: 13px;
         margin-bottom: 2px;
     }
 
     .main-offer-container {
-        margin-bottom: 0;
+        margin-bottom: 20px;
     }
 
     .two-plants-container {
         justify-content: center;
+        flex-wrap: wrap;
     }
 
     .plant-item {
@@ -1430,23 +1404,17 @@ footer ul {
     }
 
     .two-plants-text p {
-        font-size: 13px;
         padding: 10px;
     }
 
     .two-plants-container a {
         padding: 6px 14px;
-        font-size: 14px;
     }
 
     .blog-post {
         display: flex;
         flex: 1 1 calc(50% - 30px);
         align-items: center;
-    }
-
-    .footer_section1 p {
-        font-size: 13px;
     }
 
     .button-form {
@@ -1484,6 +1452,18 @@ footer ul {
         display: flex;
         gap: 26px;
         justify-content: space-between;
+    }
+
+    .arrow-button {
+        width: 12px;
+    }
+
+    .two-plants-container a {
+        font-size: 16px;
+    }
+
+    .sidebar-type {
+        padding-right: 12px;
     }
 }
 
@@ -1527,19 +1507,14 @@ footer ul {
 
     .discount-mark {
         padding: 4px;
-        font-size: 13px;
-        line-height: 13px;
     }
 
     .main-text .p2 {
-        font-size: 13px;
         margin-bottom: 10px;
-        line-height: 13px;
     }
 
     .main-text-button {
         padding: 7px 18px;
-        font-size: 14px;
     }
 
     .blog-post {
@@ -1548,7 +1523,6 @@ footer ul {
 
     .blog-container h5 {
         font-size: 15px;
-        line-height: 15px;
     }
 
     .footer_section1 {
@@ -1560,6 +1534,10 @@ footer ul {
     .footer_form {
         align-items: center;
         gap: 10px;
+    }
+
+    .footer_form p {
+        text-align: center;
     }
 
     .footer_list1 li:last-child {
@@ -1574,22 +1552,8 @@ footer ul {
         padding: 12px 0 20px;
     }
 
-    .footer_list2 li a {
-        font-size: 13px;
-        line-height: 28px;
-    }
-
-    .footer_list2 h4 {
-        font-size: 14px;
-        line-height: 14px;
-    }
-
-
-}
-
-@media (max-width: 648px) {
-    .footer_logo {
-        display: none;
+    .sidebar-sale p {
+        font-size: 15px;
     }
 }
 
@@ -1630,6 +1594,20 @@ footer ul {
     .adress-svg {
         display: none;
     }
+
+    .footer_list1 {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer_list1 li {
+        padding: 20px 0 0 101px;
+    }
+
+    .footer_list1 li:not(:last-child) {
+        margin-right: 0;
+        border-right: 0px;
+    }
 }
 
 
@@ -1654,7 +1632,6 @@ footer ul {
     }
 
     .post-date {
-        font-size: 13px;
         line-height: 13px;
         margin-bottom: 6px;
     }
@@ -1675,12 +1652,17 @@ footer ul {
         height: 38px;
     }
 
+    .pagination a,
+    .pagination .active {
+        width: 24px;
+        height: 24px;
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 410px) {
     .button-header {
         padding: 4px 5px;
-        font-size: 14px;
     }
 
     .plant-item {
